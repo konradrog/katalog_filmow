@@ -21,6 +21,8 @@ class FilmsController < ApplicationController
 
   def show
     @film = Film.find(params[:id])
+    @opinion = Opinion.new(film_id: @film.id)
+    
   end
 
   def edit

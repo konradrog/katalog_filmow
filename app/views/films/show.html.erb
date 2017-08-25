@@ -22,6 +22,17 @@
 <p> category : </p>
 <h2><%= @film.category %> </h2>
 
+
+<h2> Add opinion </h2>
+
+<%= render "opinions/form" %>
+
+<h2> Oder opinions </h2>
+
+<%= render @film.opinions%>
+
+
+
 <%= link_to "Back to all", films_path %>
 <%= link_to "Edit", edit_film_path(@film) %>
 <%= link_to "Delete", film_path(@film),

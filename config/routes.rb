@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root 'films#index'
 
   resources :films do
-    resources :opinons
+    resources :opinions
   end
 
 end

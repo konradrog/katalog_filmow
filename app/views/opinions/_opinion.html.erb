@@ -1,0 +1,12 @@
+<p> Person </p>
+<h2><%= opinion.name %> <% opinion.surname %> </h2>
+
+<p> Opinion : </p>
+<h2><%= opinion.text %> </h2>
+
+<p> Rating : </p>
+<h2><%= opinion.rate %> </h2>
+
+<%= link_to "Delete opinion", film_opinion_path(@film, opinion),
+                              method: :delete,
+                              data: { confirm: "Don't you think about it?"}%>
