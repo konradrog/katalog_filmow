@@ -1,0 +1,29 @@
+<p> title : </p>
+<h1><%= @film.title %> </h1>
+
+<p> premiere : </p>
+<h2><%= @film.premiere %> </h2>
+
+<p> length : </p>
+<h2><%= @film.length %> </h2>
+
+<p> country : </p>
+<h2><%= @film.country %> </h2>
+
+<p> director : </p>
+<h2><%= @film.director %> </h2>
+
+<p> screenwriter : </p>
+<h2><%= @film.screen_writer%> </h2>
+
+<p> description : </p>
+<h3><%= @film.description %> </h3>
+
+<p> category : </p>
+<h2><%= @film.category %> </h2>
+
+<%= link_to "Back to all", films_path %>
+<%= link_to "Edit", edit_film_path(@film) %>
+<%= link_to "Delete", film_path(@film),
+                      method: :delete,
+                      data: { confirm: "Why? tell me why?"} %>

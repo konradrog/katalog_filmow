@@ -1,0 +1,11 @@
+<h1> All films! </h1>
+<p> <%= link_to "Add film", new_film_path %>
+<% @films.each do |film| %>
+  <div>
+    <p>
+      <strong> => </strong>
+      <%= link_to film.title, film_path(film) %>
+
+    </p>
+  </div>
+<% end %>
