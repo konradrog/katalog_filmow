@@ -22,7 +22,9 @@ class FilmsController < ApplicationController
   def show
     @film = Film.find(params[:id])
     @opinion = Opinion.new(film_id: @film.id)
-    
+    @next_film = @film.next_film
+    @previous_film = @film.previous_film
+
   end
 
   def edit
@@ -42,6 +44,7 @@ class FilmsController < ApplicationController
   def destroy
     film = Film.find(params[:id])
     film.destroy
+
 
     redirect_to films_path
   end

@@ -1,11 +1,14 @@
-<h1> All films! </h1>
-<p> <%= link_to "Add film", new_film_path %>
-<% @films.each do |film| %>
-  <div>
-    <p>
-      <strong> => </strong>
-      <%= link_to film.title, film_path(film) %>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 
+<h1 id='title'> All films! </h1>
+<div id = 'films_list'>
+  <% @films.each do |film| %>
+    <p>
+      <i class="material-icons md-light">movie</i>
+      <%= link_to film.title, film_path(film), class: 'all_films' %>
     </p>
-  </div>
-<% end %>
+  <% end %>
+</div>
+<p> <%= link_to "Add film", new_film_path,  class: 'new_item' %> </p>

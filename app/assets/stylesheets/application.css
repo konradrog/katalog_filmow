@@ -13,3 +13,67 @@
  *= require_tree .
  *= require_self
  */
+body {
+
+font-family: 'Roboto', sans-serif;
+
+
+}
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+#title {
+  color: #757575;
+
+  border-width: 3px;
+  border-color: #BDBDBD;
+  border-bottom-style: solid;
+  padding: 30px;
+}
+
+#title2 {
+  color: #757575;
+
+  border-width: 3px;
+  border-color: #BDBDBD;
+  border-bottom-style: solid;
+  padding: 30px;
+}
+
+.new_item {
+  margin: 10px 20px;
+  padding: 20px;
+  color: #673AB7;
+}
+
+.all_films {
+  margin: 10px 20px;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+#films_list {
+  margin: 10px 20px;
+  padding: 10px;
+  background-color: #9575CD;
+  box-shadow: 3px 3px 4px grey;
+}
+
+.showfilm {
+  display: inline;
+}
+
+.inserts {
+  color: white;
+}
+/*a:link {
+    color: #9575CD;
+  }
+a:visited {
+    color: #FFFFFF;
+  }
+a:hover {
+    color: #512DA8;
+  }
+a:active {
+    color: #333333;
+  }*/
