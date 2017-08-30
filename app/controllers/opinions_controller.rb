@@ -8,7 +8,7 @@ class OpinionsController < ApplicationController
    if @opinion.save
      redirect_to film_path(@film)
    else
-     render "film/show"
+     render "films/show"
    end
  end
 

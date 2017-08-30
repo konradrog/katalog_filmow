@@ -8,7 +8,7 @@ class Film < ApplicationRecord
   validates :description, presence: true, length: { minimum: 5 }
   validates :category, presence: true, length: { minimum: 5 }
 
-  has_many :opinions
+  has_many :opinions, dependent: :destroy
 
   def next_film
     Film.where("title > ?", title).order(:title).first

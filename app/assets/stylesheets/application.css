@@ -17,8 +17,13 @@ body {
 
 font-family: 'Roboto', sans-serif;
 
-
 }
+
+.opinion_all {
+  margin: 10px 20px;
+  padding: 10px;
+}
+
 .material-icons.md-light { color: rgba(255, 255, 255, 1); }
 #title {
   color: #757575;

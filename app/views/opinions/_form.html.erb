@@ -2,31 +2,31 @@
 
 <%= render "common/errors", model: @opinion %>
 
-<%= form_for [@film, @opinion] do |f| %>
-<p>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-</p>
+<div class = 'opinion_all'>
+  <%= form_for [@film, @opinion] do |f| %>
+    <p>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </p>
 
-<p>
-  <%= f.label :surname %>
-  <%= f.text_field :surname %>
-</p>
+    <p>
+      <%= f.label :surname %>
+      <%= f.text_field :surname %>
+    </p>
 
-<p>
-  <%= f.label "Your opinion" %>
-  <%= f.text_area :text %>
-</p>
+    <p>
+      <%= f.label "Your opinion" %>
+      <%= f.text_area :text %>
+    </p>
 
-<p>
-  <%= f.label "rate from 1 - 10, 10 means the best" %>
-  <%= f.text_field :rate %>
-</p>
+    <p>
+      <%= f.label "rate from 1 - 10, 10 means the best" %>
+      <%= f.text_field :rate %>
+    </p>
 
+    <p>
+      <%= f.submit %>
+    </p>
 
-
-<p>
-  <%= f.submit %>
-</p>
-
-<% end %>
+  <% end %>
+</div>

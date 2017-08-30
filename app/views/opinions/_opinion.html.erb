@@ -1,14 +1,16 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-<p> Person </p>
-<h2><%= opinion.name %> <% opinion.surname %> </h2>
+<div class = 'opinion_all'>
+  <p> Person :
+  <span><%= opinion.name %> <%= opinion.surname %> </span>
 
-<p> Opinion : </p>
-<h2><%= opinion.text %> </h2>
+  <p> Opinion :
+  <span><%= opinion.text %> </span>
 
-<p> Rating : </p>
-<h2><%= opinion.rate %> </h2>
+  <p> Rating :
+  <span><%= opinion.rate %> </span>
 
-<%= link_to "Delete opinion", film_opinion_path(@film, opinion),
-                              method: :delete,
-                              data: { confirm: "Don't you think about it?"}%>
+  <%= link_to "Delete opinion", film_opinion_path(@film, opinion),
+                                method: :delete,
+                                data: { confirm: "Don't you think about it?"}%>
+</div>
